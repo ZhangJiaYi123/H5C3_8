@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <ul>
+                <li><img src="images/sign.jpg" alt=""></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">榜单</a></li>
+                <li><a href="#">歌手</a></li>
+                <li><a href="#">下载酷我客户端</a></li>
+            </ul>
+        </div>
+        <div class="header_center">
+            <ul>
+                <li><a href="#">美女秀</a></li>
+                <li><a href="#">酷我耳机</a></li>
+                <li><a href="#">VIP会员</a></li>
+                <li><a href="#">i听</a></li>
+            </ul>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="#">更多服务</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">^</a><input type="text" value="搜到好音乐" id="input"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body_left">
+            <div class="body_left_head">喜羊羊</div>
+            <div class="body_left_infor">
+                <ul>
+                    <li>专辑：<a href="#">儿童大全</a></li>
+                    <li>歌手：<a href="#">华语群星</a></li>
+                    <li>分享</li>
+                    <li><a href="#">评论</a></li>
+                </ul>
+            </div>
+            <div class="body_left_ori">
+                <ul>
+                    <li>上传时间：2015-10-02 歌曲来源：明大相思湖网球社</li>
+                </ul>
+            </div>
+            <div class="body_left_content">
+                <p>喜羊羊美羊羊懒羊羊沸羊羊</p>
+                <p>慢羊羊软绵绵红太狼灰太狼</p>
+                <p>别看我只是一只羊</p>
+                <p>绿草因为我变的更香</p>
+                <p>天空因为我变的更蓝</p>
+                <p>白云因为我变的柔软</p>
+                <p>别看我只是一只羊</p>
+                <p>羊儿的聪明难以想像</p>
+                <p>天再高心情一样奔放</p>
+                <p>每天都追赶太阳</p>
+                <p>有什么难题去牵绊我都不会去心伤</p>
+                <p>有什么危险在我面前也不会去慌乱</p>
+                <p>就算有狼群把我追捕也当做游戏一场</p>
+                <p>在什么时间都爱开心笑容都会飞翔</p>
+                <p>就算会摔倒站得起来永远不会沮丧</p>
+                <p>在所有天气拥有叫人大笑的力量</p>
+                <p>虽然我只是羊</p>
+                <p>喜羊羊美羊羊</p>
+            </div>
+        </div>
+        <div class="body_right">
+            <div class="body_right_rol_bor">
+                <div class="body_right_rol">
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body_right_music">
+                <audio autoplay="autoplay" id="mymusic">
+                    <source src="images/1.mp3" type="audio/mp3">
+                </audio>
+                <div class="play" id="wp_playBtn"></div>
+                <div class="playerMid">
+                    <div id="prograssBar">
+                        <div id="wp_bufBar">
+                            <div class="prograssBar" id="wp_processBar"></div>
+                            <a href="##" class="schedule_btn" id="wp_processBtn" style="left: 0;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="playerRight">
+                    <p id="wp_playTime" class="opacity">00.00</p>
+                    <div id="controllBtn">
+                        <div class="sound" id="wp_mute">
+                            <div id="soundBox">
+                                <div class="soundPro">
+                                    <div class="soundPro" id="wp_volBar"></div>
+                                    <a href="##" id="wp_volBtn"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body_right_download">
+                <div></div>
+                <button type="submit" id="download">免费下载这首歌</button>
+            </div>
+            <div class="dialog">
+                <div class="dialog_guo"></div>
+                <div class="dialog_content">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;郭子仪——H5班</p>
+                    </br></br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/gif.gif" alt=""
+                            style="width:10px;height:10px">&nbsp;喜羊羊与灰太狼<a href="#">去现场-></a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="comment_top">
+            <div>评论</div>
+            <div id="comment_num">0条评论</div>
+        </div>
+        <div class="comment_mid">
+            <div class="comment_mid_left"><img src="images/guo.jpg" alt=""></div>
+            <textarea class="comment_mid_right" id="comment_mid_right">分享你的音乐见解</textarea>
+        </div>
+        <div class="comment_bottom">
+            <img src="images/commenticon.png" alt="">
+            <div>
+                <span id="subCon">已输入0个字</span>
+                <button type="submit" id="subBtn">评论</button>
+            </div>
+        </div>
+    </div>
+    <div class="show">
+        <span id="show_span">精彩评论</span>
+        <div class="show_mid_background">
+            <div class="show_mid" id="show_area">
+                <div class="show_mid_con">
+                    <img src='images/头像.jpg' alt=''>
+                    <div>
+                        <ul>
+                            <li><a href='#'>酷狗用户</a></li>
+                            <li>我热爱音乐</li>
+                            <li>2021/6/7  16:00:00</li>
+                        </ul>
+                        <ul>
+                            <li><a href='#'>分享</a></li>
+                            <li></br></li>
+                            <li><a href='#'>删除</a>&nbsp;&nbsp;&nbsp;&nbsp;163&nbsp;<img src='images/bg2.jpg' alt=''>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#'>回复</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show_bottom">
+            <ul class="box modal-4" id="box">
+                　　<li><a href="##" class="prev"><img src="images/left80.png" alt=""
+                            style="width: 15px; height: 15px;"></a></li>
+                　　<li><a href="##" class="active">1</a></li>
+                　　<li><a href="##" class="next"><img src="images/right80.png" alt=""
+                            style="width: 15px; height: 15px;"></a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    //文本框点击时默认值消失，失去焦点时默认值出现
+    var input = document.getElementById("input");
+    input.onfocus = function () {
+        input.value = "";
+    }
+    input.onblur = function () {
+        input.value = "搜到好音乐";
+    }
+</script>
+<script type="text/javascript" src="js/music.js"></script>
+<script type="text/javascript" src="js/comment.js"></script>
+
+</html>
